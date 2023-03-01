@@ -1,0 +1,13 @@
+.div {
+  text-align: right;
+}
+
+.nav {
+  display: inline-block;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+.wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.search {
+  width: 50vw;
+  height: 70px;
+}
+
+.form {
+  width: 40vw;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.input {
+  display: inline-block;
+  width: 30vw;
+  height: 30px;
+}

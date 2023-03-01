@@ -1,0 +1,14 @@
+.btn {
+  background-image: url("../static/images/kakao_login.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn:hover {
+  box-shadow: 2px 2px black;
+}
