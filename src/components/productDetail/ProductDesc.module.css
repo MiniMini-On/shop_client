@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 400px;
+  justify-content: space-between;
+}
+
+.title {
+  line-height: 1.5;
+}
+
+.outer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 60px;
+}
+.wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  line-height: 1.5;
+}
+
+.cart {
+  background-image: url("https://www.oround.com/image/icon/top-cart2.svg?1677723569360");
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
+  background-color: white;
+  border-radius: 20px;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  line-height: 50px;
+}
+.buy {
+  background-image: url("https://www.oround.com/image/icon/check-color.svg");
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
+  background-color: white;
+  border-radius: 20px;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  line-height: 50px;
+  margin-left: 50px;
+}
+
+.buy:hover,
+.cart:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px gray;
+}

@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
-// import './App.css';
+import "./App.css";
 import { useEffect, useState } from "react";
-import AppRouter from "./Router";
+import AppRouter from "./components/Router";
 
 function App() {
   const [init, setInit] = useState(false);

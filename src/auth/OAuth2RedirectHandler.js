@@ -15,7 +15,7 @@ const OAuth2RedirectHandler = () => {
 
   const kakaoLogin = (code) => {
     axios
-      .post("http://localhost:8000/api/auth/callback/kakao", { code: code })
+      .post("api/auth/callback/kakao", { code: code })
       .then((res) => {
         console.log(res);
         Cookie.set("refresh", res.data.refresh);
@@ -57,18 +57,7 @@ const OAuth2RedirectHandler = () => {
     kakaoLogin(code);
   }, []);
 
-  return (
-    <div>
-      {ModalisOpen && (
-        <RegisterModal
-        // open={ModalisOpen}
-        // onClose={() => {
-        //   setModalIsOpen(false);
-        // }}
-        />
-      )}
-    </div>
-  );
+  return <div>{ModalisOpen && <RegisterModal />}</div>;
 };
 
 export default OAuth2RedirectHandler;

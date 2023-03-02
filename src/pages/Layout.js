@@ -42,7 +42,7 @@ function Layout() {
     <div>
       {user.username ? <HeaderLogin /> : <HeaderLogout />}
       <CommonHeader />
-      <Navbar />
+      {/* <Navbar /> */}
       <Outlet /> {/*자식 component 들어감*/}
     </div>
   );

@@ -24,3 +24,17 @@
   width: 30vw;
   height: 30px;
 }
+
+.logo {
+  width: 25vw;
+  text-align: center;
+  line-height: 70px;
+}
+
+.img {
+  margin-top: 15px;
+  width: 200px;
+}
+.img:hover {
+  cursor: pointer;
+}

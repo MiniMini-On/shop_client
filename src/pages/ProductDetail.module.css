@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.img {
+  width: 40vw;
+  border-radius: 100px;
+  margin: 50px;
+}
+
+.text {
+  padding-top: 50px;
+}

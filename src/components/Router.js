@@ -6,13 +6,14 @@ import MyInfo from "../pages/MyInfo";
 import Layout from "../pages/Layout";
 import PrivateLayout from "../pages/PrivateLayout";
 import OAuth2RedirectHandler from "../auth/OAuth2RedirectHandler";
+import ProductDetail from "../pages/ProductDetail";
 
 function AppRouter() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/sticker/:id" element={<ProductDetail />} />
         <Route path="/oauth/callback/kakao" element={<OAuth2RedirectHandler />}></Route>
         <Route element={<PrivateLayout />}>
           <Route path="/myInfo" element={<MyInfo />} />
