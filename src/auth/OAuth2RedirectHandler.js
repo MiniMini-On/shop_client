@@ -18,7 +18,7 @@ const OAuth2RedirectHandler = () => {
       .post("api/auth/callback/kakao", { code: code })
       .then((res) => {
         console.log(res);
-        Cookie.set("refresh", res.data.refresh);
+        // Cookie.set("refresh", res.data.refresh);
         setAccessToken(res.data.access);
         setCSRFToken(res.headers["x-csrftoken"]);
         setRefreshToken(res.data.refresh);

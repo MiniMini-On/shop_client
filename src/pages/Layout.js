@@ -20,6 +20,7 @@ function Layout() {
       axios
         .post("api/auth/token/refresh", { refresh: refresh })
         .then((response) => {
+          console.log(response);
           setAccessToken(response.data.access);
           setCSRFToken(response.headers["x-csrftoken"]);
           pAxios(response)
